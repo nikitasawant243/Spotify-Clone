@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Reviews</title>
+  <link rel="stylesheet" href="customer_service.css">
+</head>
+<body>
+  <header>
+    <h1>User Reviews</h1>
+    <nav>
+      <a href="/">Home</a> | 
+      <a href="#review-form">Write a Review</a> | 
+      <a href="#reviews">Read Reviews</a>
+    </nav>
+  </header>
+
+  <section id="review-form">
+    <h2>See what our listeners have to say !</h2>
+    <form id="reviewForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="title">Review Title:</label>
+        <input type="text" id="title" placeholder="Enter review title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="review">Your Review:</label>
+        <textarea id="review" rows="4" placeholder="Write your review" required></textarea>
+      </div>
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section id="reviews">
+    <h2>User Reviews</h2>
+    <div class="reviews-container">
+      <!-- Customer reviews will be injected here dynamically -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Spotify. All Rights Reserved.</p>
+  </footer>
+
+  <script src="customer_service.js"></script>
+</body>
+</html>

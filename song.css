@@ -1,0 +1,361 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    background: black;
+    overflow-x: hidden;
+}
+
+.sidebar{
+
+    width: 300px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom : 0;
+    padding: 10px;
+}
+
+.navbar{
+    background-color:#1f1f1f;
+    border-radius: 8px;
+    padding: 20px 10px;
+    margin-bottom: 10px ;
+}
+
+.navbar .logo{
+    width: 120px;
+}
+
+.navbar .spotify-logo img {
+    width: 100px;
+    margin: 10px;
+    
+}
+.navbar ul {
+    color: white;
+    list-style: none;
+}
+
+.navbar ul li{
+    padding: 10px 20px;
+    font-size: 20px;
+    
+
+}
+.navbar ul li a:hover{
+    color: white;
+}
+
+.navbar ul li a{
+    color : #b3b3b3;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+   
+}
+
+.lib-logo{
+    width: 20px;
+    color: white;
+    filter: invert(1);
+}
+
+.library::after{
+    content: "+";
+    float:right;
+    text-align: center;
+    background: #1f1e1e1e;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 15px;
+
+}
+
+.create-playlist{
+    background: #292929;
+    padding: 30px 15px ;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.sidebar-scroll{
+    height:120px;
+    overflow-y: auto;
+}
+
+.sidebar-scroll::-webkit-scrollbar{
+    background: transparent;
+}
+
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+    background: #5c5b5b;
+    width: 5px;
+
+}
+
+.create-playlist h4{
+    color: white;
+    font-size: 15px;
+}
+
+.create-playlist p{
+    color: #fff;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+.create-playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline:0 ;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+.privacy ul li a{
+    text-decoration: none;
+    color:#b3b3b3;
+    font-size: 11px;
+    font-weight:600 ;
+    margin:0 6px;
+}
+.privacy ul li a:hover{
+    text-decoration: underline;
+    color:#bebcbc;
+}
+
+.privacy ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.privacy ul li{
+    padding: 0px;
+    padding-bottom: 8px;
+
+}
+.eng-btn{
+    padding: 10px 30px;
+}
+
+.eng-btn button{
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+    border: 1px solid #818080;
+    border-radius: 20px;
+    margin: 10px 0;
+
+}
+.eng-btn button:hover{
+    padding: 11px 31px;
+    border: 1px solid #fff;
+}
+.right-side{
+    margin-left: 300px;
+    width: 100px;
+    width: calc(100% - 300px);
+    height: 100%;
+}
+.artist-image img {
+    max-width: 100%;   /* Ensure the image scales to fit within the container's width */
+    height: auto;      /* Maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image fills the container while maintaining proportion */
+    display: block;    /* Remove any space below the image */
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect on hover */
+}
+
+.artist-image {
+    width: 100%;         /* Take the full width of the parent container */
+    max-height: 300px;    /* Optional: Limit the height */
+    overflow: hidden;
+    margin-top: 0px;     /* Ensure content stays within the container */
+}
+
+.artist-image:hover img {
+    transform: scale(1.05); /* Zoom-in effect on hover */
+}
+
+.container{
+    margin-left: 30px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #1b203b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+}
+
+.header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+/* Dropdown menu styling */
+/* Adjusted dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 200px;  /* Adjust the position to align below ⋯ */
+    right: 650px;   /* Align it with the three-dot icon */
+    background-color: #292929;
+    border-radius: 8px;
+    padding: 10px;
+    width: 180px;
+    display: none;  /* Hidden by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;  /* Ensure it stays on top of other elements */
+    white-space: nowrap;
+}
+
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li:hover {
+    background-color: #414140;
+}
+.play-btn {
+    background-color: #1db954;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+}
+
+.play-btn:hover {
+    background-color: #17a64a;
+}
+
+.follow-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 30px;
+}
+
+.menu:hover {
+    color: #b3b3b3;
+}
+.title1{
+     color: #b8b1b1;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.song-list {
+    list-style: none;
+}
+
+.song-item {
+    display: grid;
+    grid-template-columns: 30px 50px 1fr 0px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.song-item:hover {
+    background-color: #313446;
+}
+
+.song-number {
+    font-size: 16px;
+    text-align: center;
+    color: #b3b3b3;
+}
+
+.song-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.song-info {
+    padding-left: 10px;
+}
+
+.title {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.streams {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.duration {
+    font-size: 14px;
+    color: #b3b3b3;
+    text-align: right;
+    margin-left: 70px;
+}

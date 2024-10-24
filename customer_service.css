@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #cce6ff;
+  }
+  
+  /* Section Styles */
+  section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #1db954;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #1db954;
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #1db954;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1db954;
+  }
+  
+  /* Reviews Section */
+  .reviews-container .review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease-in-out;
+  }
+  
+  .review-title {
+    font-size: 1.4rem;
+    color: #1db954;
+    font-weight: 600;
+  }
+  
+  .review-author {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .review-content {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Footer Styles */
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000;
+    color: white;
+    margin-top: 30px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

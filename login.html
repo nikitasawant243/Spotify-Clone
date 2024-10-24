@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Login Page - CodeCraftedWeb</title>
+
+    <!--========== CSS File ==========-->
+    <link rel="stylesheet" href="login.css">
+
+    <!--========== Favicon ==========-->
+    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon">
+
+    <!--========== Remixicon ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--========== Header ==========-->
+    <header class="spotify-header">
+        <!--===== Nav =====-->
+        <nav class="spotify-nav">
+            <i class="ri-spotify-fill logo"></i>
+            <span class="head-txt">Spotify</span>
+        </nav>
+    </header>
+
+    <!--========== Main Content ==========-->
+    <main class="main-content">
+        <!--===== Login Container =====-->
+        <div class="login-container">
+            <div class="login-head">
+                <h1>Log in to Spotify</h1>
+            </div>
+        
+            <div class="login-options">
+                <div class="google">
+                    <img src="/Images/google.webp" alt="google">
+                    <h3>Continue with Google</h3>
+                </div>
+        
+                <div class="facebook">
+                    <img src="/Images/facebook.svg" alt="facebook">
+                    <h3>Continue with Facebook</h3>
+                </div>
+        
+                <div class="apple">
+                    <img src="/Images/apple.png" alt="apple">
+                    <h3>Continue with Apple</h3>
+                </div>
+        
+                <div class="mobile">
+                    <h3>Continue with phone number</h3>
+                </div>
+            </div>
+        
+            <!-- Start of the form -->
+            <form id="login-form" action="login.php" method="POST">
+                <div class="login-content">
+                    <div class="email-input-box">
+                        <label for="email" class="email-label">Email or username</label>
+                        <input type="email" name="email" class="email-input" placeholder="Email or username" required>
+                    </div>
+        
+                    <div class="password-input-box">
+                        <label for="password" class="password-label">Password</label>
+                        <div class="pass-div">
+                            <input type="password" name="password" class="password-input" placeholder="Password" required>
+                            <i class="ri-eye-off-line pass-toggle"></i>
+                        </div>
+                    </div>
+        
+                    <div class="remember">
+                        <input type="checkbox" class="rem-check" checked>
+                        <span class="rem-txt">Remember me</span>
+                    </div>
+        
+                    <div class="login-button">
+                        <button type="submit" class="login-btn"> <a href="./index.html">Log In</a></button>
+                    </div>
+        
+                    <div class="forgot">
+                        <a href="#" class="forgot-txt">Forgot your password?</a>
+                    </div>
+                </div>
+            </form>
+            <!-- End of the form -->
+        
+            <div class="signUp">
+                <span class="signUp-txt">Don't have an account? <a href="#">Sign up for Spotify</a></span>
+            </div>
+        </div>
+        
+    </main>
+
+    <!--========== Footer ==========-->
+    <footer class="footer">
+        <span class="footer-txt">This site is protected by reCAPTCHA and the Google <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</span>
+    </footer>
+</body>
+</html>

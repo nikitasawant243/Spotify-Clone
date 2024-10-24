@@ -1,0 +1,346 @@
+/*========== Google Fonts ==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Proza+Libre&display=swap');
+
+/*========== Basic CSS ==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(180deg, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 25px;
+    overflow: clip;
+}
+
+/*========== Header ==========*/
+
+.spotify-header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    background-color: #000;
+}
+
+.spotify-nav {
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.logo {
+    font-size: 2.75rem;
+}
+
+.head-txt {
+    font-size: 1.65rem;
+    font-weight: bold;
+}
+
+/*========== Main Content ==========*/
+
+.main-content {
+    padding: 2rem 0;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 6rem 3rem;
+    row-gap: 1rem;
+    max-width: 750px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: .65rem;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(18,18,18,1) 75%);
+}
+
+.login-head h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.login-options {
+    display: grid;
+    row-gap: .5rem;
+    border-bottom: .5px solid #2d2d2d;
+    width: 100%;
+    place-items: center;
+    padding: 2rem 0 3rem;
+}
+
+.google, .facebook, .apple, .mobile {
+    display: flex;
+    align-items: center;
+    border: .5px solid #636363;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.google, .facebook, .apple {
+    height: 3rem;
+    width: 60%;
+    padding: 1.5rem 2rem;
+    column-gap: 2rem;
+    justify-content: start;
+}
+
+.google h3, .facebook h3, .apple h3, .mobile h3 {
+    font-weight: 600;
+}
+
+.apple {
+    column-gap: 2.3rem;
+}
+
+.apple img {
+    color: #fff;
+}
+
+.mobile {
+    height: 3rem;
+    width: 60%;
+    padding: 1.5rem 2rem;
+    justify-content: center;
+}
+
+.login-options div {
+    transition: border-color .4s;
+}
+
+.login-options div:hover {
+    border-color: #fff;
+}
+
+/*========== Login Content ==========*/
+
+.login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130%;
+    padding: 1rem 0 2rem;
+    border-bottom: .5px solid #2d2d2d;
+    row-gap: 1.25rem;
+    padding-right: 80px;
+}
+
+.email-input-box, .password-input-box {
+    display: grid;
+    width: 100%;
+    row-gap: .5rem;
+}
+
+.email-label, .password-label, .rem-txt {
+    font-weight: bold;
+}
+
+.email-input, .password-input {
+    border: 1.5px solid #6e6e6e;
+    border-radius: .25rem;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: .85rem;
+    font-size: 1.15rem;
+    font-family: "Comic Neue", cursive;
+    font-weight: bold;
+    transition: border-color .4s;
+}
+
+.email-input:hover, .password-input:hover {
+    border-color: #fff;
+}
+
+.email-input:focus, .password-input:focus {
+    outline: 3px solid #fff;
+}
+
+.email-input::placeholder, .password-input::placeholder {
+    font-weight: bold;
+    color: #b3b3b3;
+    font-size: 1.15rem;
+}
+
+.pass-div {
+    position: relative;
+    width: 100%;
+    border-radius: .25rem;
+    display: flex;
+    align-items: center;
+}
+
+.password-input {
+    width: 100%;
+}
+
+.pass-toggle {
+    position: absolute;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: color .4s, scale .4s;
+}
+
+.pass-toggle:hover {
+    color: #fff;
+    scale: 1.1;
+}
+
+.remember {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.rem-check {
+    height: 16px;
+    width: 16px;
+    background-color: #1ed760;
+    accent-color: #1ed760;
+}
+
+.login-button {
+    width: 60%;
+    text-decoration: none;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #1ed760;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: .75rem 0;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: scale .4s, box-shadow .4s;
+    
+}
+.login-btn a{
+    text-decoration: none;
+}
+.login-btn:hover {
+    scale: 1.05;
+    box-shadow: #0c7b33 0px 0px 25px 0px;
+}
+
+.forgot {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .75rem;
+}
+
+.forgot-txt {
+    
+    font-size: 1.1rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.signUp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.signUp-txt {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #b3b3b3;
+    text-align: center;
+}
+
+/*========== Footer ==========*/
+
+.footer {
+    width: 100%;
+    background-color: #121212;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-txt {
+    font-size: .75rem;
+    font-weight: bold;
+    color: #949494;
+    text-align: center;
+    
+}
+
+.footer-txt a {
+    color: #949494;
+}
+
+/*========== Media Queries ==========*/
+
+@media screen and (max-width: 785px) {
+    .spotify-header {
+        padding: 0 2rem;
+        height: 5rem;
+    }
+
+    .main-content {
+        padding: 0;
+    }
+
+    .login-container {
+        max-width: 100%;
+        border-radius: 0;
+        padding: 1rem 2rem 3rem;
+        align-items: start;
+    }
+
+    .login-head h1 {
+        font-size: 2.25rem;
+    }
+
+    .google, .facebook, .apple, .mobile,
+    .email-input-box, .password-input-box,
+    .remember, .login-button, .forgot {
+        width: 100%;
+    }
+
+    .google h3, .facebook h3, .apple h3 {
+        width: 75%;
+        text-align: center;
+    }
+}
+
+.login-content{
+    border-radius: 30%;
+}
